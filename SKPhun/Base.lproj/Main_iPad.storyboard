@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="XKViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c6V-yp-rS9"/>
+                        <viewControllerLayoutGuide type="bottom" id="GLB-4L-jWe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ket-gg-3MI" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MdF-jr-0Qp">
+                                        <rect key="frame" x="18" y="971" width="732" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lower Frame Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rww-jA-kkN">
+                                        <rect key="frame" x="607" y="942" width="141" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="MdF-jr-0Qp" firstAttribute="leading" secondItem="ket-gg-3MI" secondAttribute="leading" constant="20" symbolic="YES" id="DbH-yS-GCz"/>
+                                    <constraint firstItem="MdF-jr-0Qp" firstAttribute="trailing" secondItem="Rww-jA-kkN" secondAttribute="trailing" id="Nsh-T9-LYY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rww-jA-kkN" secondAttribute="trailing" constant="20" symbolic="YES" id="OA5-2Q-haS"/>
+                                    <constraint firstItem="MdF-jr-0Qp" firstAttribute="top" secondItem="Rww-jA-kkN" secondAttribute="bottom" constant="8" symbolic="YES" id="Pd9-ER-ZfI"/>
+                                    <constraint firstAttribute="bottom" secondItem="MdF-jr-0Qp" secondAttribute="bottom" constant="20" symbolic="YES" id="r1N-55-Fye"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Higher Frame Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gX2-tb-Jp3">
+                                <rect key="frame" x="20" y="942" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="RQV-Mt-7AT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ket-gg-3MI" secondAttribute="bottom" id="ArA-hg-Pxf"/>
+                            <constraint firstItem="ket-gg-3MI" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="D1l-En-HLm"/>
+                            <constraint firstItem="gX2-tb-Jp3" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="20" symbolic="YES" id="FH4-Wx-TWy"/>
+                            <constraint firstItem="ket-gg-3MI" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="MvN-eE-wiH"/>
+                            <constraint firstAttribute="trailing" secondItem="ket-gg-3MI" secondAttribute="trailing" id="Vdt-01-Hk9"/>
+                            <constraint firstItem="GLB-4L-jWe" firstAttribute="top" secondItem="gX2-tb-Jp3" secondAttribute="bottom" constant="61" id="yfv-xV-P70"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="frLabel" destination="gX2-tb-Jp3" id="Tj1-9b-kIX"/>
+                        <outlet property="gameView" destination="ket-gg-3MI" id="urR-yu-Zbv"/>
+                        <outlet property="slider" destination="MdF-jr-0Qp" id="Ufk-z7-72x"/>
+                        <outlet property="view" destination="3se-qz-xqx" id="5OM-jp-NEk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>

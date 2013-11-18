@@ -10,5 +10,8 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface XKViewController : UIViewController
-
+@property(strong,nonatomic) IBOutlet SKView* gameView;
+@property(strong,nonatomic) IBOutlet UISlider* slider;
+@property(strong,nonatomic) IBOutlet UILabel* frLabel;
+-(IBAction)sliderChanged:(id)sender;
 @end

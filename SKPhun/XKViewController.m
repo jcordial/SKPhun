@@ -7,7 +7,7 @@
 //
 
 #import "XKViewController.h"
-#import "XKMyScene.h"
+#import "XKMyScene1.h"
 
 @implementation XKViewController
 
@@ -16,16 +16,21 @@
     [super viewDidLoad];
 
     // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
-    SKScene * scene = [XKMyScene sceneWithSize:skView.bounds.size];
+    SKView * skView = self.gameView;
+    SKScene * scene = [XKMyScene1 sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
     // Present the scene.
+	skView.showsFPS = YES;
     [skView presentScene:scene];
+
+
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+	[self.slider addTarget:self action:@selector(sliderChanged:) forControlEvents:UIControlEventValueChanged];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+	[self.slider removeTarget:self action:@selector(sliderChanged:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (BOOL)shouldAutorotate
@@ -48,4 +53,18 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+#pragma mark - EVENTS
+-(void)sliderChanged:(id)sender{
+    SKView * skView = self.gameView;
+	// you should note, the interval isn't directly translatable to a frame rate.
+	// 1 - refresh rate of the current screen.
+	// > 1 - increases time between refreshes
+	// < 1 - is an error. Don't do that.
+	const int maxInterval = 10;
+	const int minInterval = 1;
+
+	int newInterval = self.slider.value*(maxInterval-minInterval)+minInterval;
+
+	skView.frameInterval = newInterval;
+}
 @end

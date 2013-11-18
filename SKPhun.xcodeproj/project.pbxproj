@@ -14,10 +14,9 @@
 		81CE316C183ABD2B00601C24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81CE316A183ABD2B00601C24 /* InfoPlist.strings */; };
 		81CE316E183ABD2B00601C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CE316D183ABD2B00601C24 /* main.m */; };
 		81CE3172183ABD2B00601C24 /* XKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CE3171183ABD2B00601C24 /* XKAppDelegate.m */; };
-		81CE3175183ABD2B00601C24 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CE3173183ABD2B00601C24 /* Main_iPhone.storyboard */; };
 		81CE3178183ABD2B00601C24 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CE3176183ABD2B00601C24 /* Main_iPad.storyboard */; };
 		81CE317B183ABD2B00601C24 /* XKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CE317A183ABD2B00601C24 /* XKViewController.m */; };
-		81CE317E183ABD2B00601C24 /* XKMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CE317D183ABD2B00601C24 /* XKMyScene.m */; };
+		81CE317E183ABD2B00601C24 /* XKMyScene1.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CE317D183ABD2B00601C24 /* XKMyScene1.m */; };
 		81CE3180183ABD2B00601C24 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CE317F183ABD2B00601C24 /* Spaceship.png */; };
 		81CE3182183ABD2B00601C24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CE3181183ABD2B00601C24 /* Images.xcassets */; };
 		81CE3189183ABD2B00601C24 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CE3188183ABD2B00601C24 /* XCTest.framework */; };
@@ -49,12 +48,11 @@
 		81CE316F183ABD2B00601C24 /* SKPhun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKPhun-Prefix.pch"; sourceTree = "<group>"; };
 		81CE3170183ABD2B00601C24 /* XKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKAppDelegate.h; sourceTree = "<group>"; };
 		81CE3171183ABD2B00601C24 /* XKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKAppDelegate.m; sourceTree = "<group>"; };
-		81CE3174183ABD2B00601C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		81CE3177183ABD2B00601C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		81CE3179183ABD2B00601C24 /* XKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKViewController.h; sourceTree = "<group>"; };
 		81CE317A183ABD2B00601C24 /* XKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKViewController.m; sourceTree = "<group>"; };
-		81CE317C183ABD2B00601C24 /* XKMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKMyScene.h; sourceTree = "<group>"; };
-		81CE317D183ABD2B00601C24 /* XKMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKMyScene.m; sourceTree = "<group>"; };
+		81CE317C183ABD2B00601C24 /* XKMyScene1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKMyScene1.h; sourceTree = "<group>"; };
+		81CE317D183ABD2B00601C24 /* XKMyScene1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKMyScene1.m; sourceTree = "<group>"; };
 		81CE317F183ABD2B00601C24 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		81CE3181183ABD2B00601C24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		81CE3187183ABD2B00601C24 /* SKPhunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPhunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,12 +123,11 @@
 			children = (
 				81CE3170183ABD2B00601C24 /* XKAppDelegate.h */,
 				81CE3171183ABD2B00601C24 /* XKAppDelegate.m */,
-				81CE3173183ABD2B00601C24 /* Main_iPhone.storyboard */,
 				81CE3176183ABD2B00601C24 /* Main_iPad.storyboard */,
 				81CE3179183ABD2B00601C24 /* XKViewController.h */,
 				81CE317A183ABD2B00601C24 /* XKViewController.m */,
-				81CE317C183ABD2B00601C24 /* XKMyScene.h */,
-				81CE317D183ABD2B00601C24 /* XKMyScene.m */,
+				81CE317C183ABD2B00601C24 /* XKMyScene1.h */,
+				81CE317D183ABD2B00601C24 /* XKMyScene1.m */,
 				81CE317F183ABD2B00601C24 /* Spaceship.png */,
 				81CE3181183ABD2B00601C24 /* Images.xcassets */,
 				81CE3168183ABD2B00601C24 /* Supporting Files */,
@@ -247,7 +244,6 @@
 				81CE3180183ABD2B00601C24 /* Spaceship.png in Resources */,
 				81CE3182183ABD2B00601C24 /* Images.xcassets in Resources */,
 				81CE3178183ABD2B00601C24 /* Main_iPad.storyboard in Resources */,
-				81CE3175183ABD2B00601C24 /* Main_iPhone.storyboard in Resources */,
 				81CE316C183ABD2B00601C24 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81CE316E183ABD2B00601C24 /* main.m in Sources */,
-				81CE317E183ABD2B00601C24 /* XKMyScene.m in Sources */,
+				81CE317E183ABD2B00601C24 /* XKMyScene1.m in Sources */,
 				81CE3172183ABD2B00601C24 /* XKAppDelegate.m in Sources */,
 				81CE317B183ABD2B00601C24 /* XKViewController.m in Sources */,
 			);
@@ -299,14 +295,6 @@
 				81CE316B183ABD2B00601C24 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		81CE3173183ABD2B00601C24 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81CE3174183ABD2B00601C24 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		81CE3176183ABD2B00601C24 /* Main_iPad.storyboard */ = {
@@ -491,6 +479,7 @@
 				81CE319A183ABD2B00601C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81CE319B183ABD2B00601C24 /* Build configuration list for PBXNativeTarget "SKPhunTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +488,7 @@
 				81CE319D183ABD2B00601C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "XKViewController.h"
-#import "XKMyScene1.h"
+#import "XKPhiPhenomenonScene.h"
 
 @implementation XKViewController
 
@@ -17,13 +17,10 @@
 
     // Configure the view.
     SKView * skView = self.gameView;
-    SKScene * scene = [XKMyScene1 sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+
     // Present the scene.
 	skView.showsFPS = YES;
     [skView presentScene:scene];
-
-
 }
 
 -(void)viewDidAppear:(BOOL)animated{

@@ -8,6 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface XKMyScene1 : SKScene
+@interface XKPhiPhenomenonScene : SKScene
 
 @end

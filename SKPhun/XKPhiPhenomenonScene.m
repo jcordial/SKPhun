@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 xiik. All rights reserved.
 //
 
-#import "XKMyScene1.h"
-@interface XKMyScene1(){
+#import "XKPhiPhenomenonScene.h"
+@interface XKPhiPhenomenonScene(){
 	SKSpriteNode *sprite;
 }
 @end
-@implementation XKMyScene1
+@implementation XKPhiPhenomenonScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
